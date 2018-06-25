@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Population Vs Poverty-Rate</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+      svg { border: 1px solid gray; display:block; }
+    </style>
+    <style>
+        .purple { 
+          background:lightsalmon;
+          color: white;
+        }
+        
+    </style>
+</head>
+<body class="container"> <!-- content -->
+    <h6>Name- Neha Palsokar</h6>
+    <h6>data-source : https://data-downloads.evictionlab.org/ </h6>
+    <h4>3 easy steps:</h4>
+    <h6>1.Default functionality:
+         <br>*Poverty rate values over 20 are highlighted by hovering mouse.
+         <br>*Clicking on "Remove poverty-rate values less than entered value" button deletes values below 20</h6>
+    <h6>2.Enter any poverty rate value between 5-25 and click "Go!" button to change default value of 20.
+        <br>*Hover mouse over values above new entered value to see change in color
+        <br>*Now clicking on "Remove poverty-rate values less than entered value" button deletes values below new entered value
+    </h6>
+    <h6>3.Try changing the background color by clicking the button!</h6>
+    <p><button id="purplize" class="btn btn-primary">Change background color</button></p>
+    <p class="form-inline">
+        <button id="addButton" class="btn btn-primary">Remove poverty-rate values less than entered value</button>
+    </p>
+    
+    <h3>Population Vs Poverty-Rate</h3>
+    <div class="container">
+              
+        <div class="input-field">
+           <i class="fa fa-user fa-2x prefix" aria-hidden="true"></i>
+           <input name="query" type="number" placeholder="Enter poverty rate" id="searchBox">
+           <button id="searchButton" class="btn btn-primary">Go!<i class="fa fa-search" aria-label="search button"></i></button>
+        </div>
+    <svg xmlns="http://www.w3.org/2000/svg"></svg>
+   
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="visualization.js"></script>
+</body>
+</html>
